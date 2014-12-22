@@ -14,6 +14,10 @@
 		4D3834DC1A2C5DBB00D0B06C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D3834DB1A2C5DBB00D0B06C /* Images.xcassets */; };
 		4D3834DF1A2C5DBB00D0B06C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D3834DD1A2C5DBB00D0B06C /* LaunchScreen.xib */; };
 		4D3834EB1A2C5DBB00D0B06C /* widgetTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3834EA1A2C5DBB00D0B06C /* widgetTestTests.m */; };
+		4D3834FB1A2C5E0600D0B06C /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3834FA1A2C5E0600D0B06C /* NotificationCenter.framework */; };
+		4D3835011A2C5E0600D0B06C /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3835001A2C5E0600D0B06C /* TodayViewController.m */; };
+		4D3835031A2C5E0600D0B06C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D3835021A2C5E0600D0B06C /* MainInterface.storyboard */; };
+		4D3835061A2C5E0600D0B06C /* Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4D3834F81A2C5E0600D0B06C /* Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +28,28 @@
 			remoteGlobalIDString = 4D3834CA1A2C5DBB00D0B06C;
 			remoteInfo = widgetTest;
 		};
+		4D3835041A2C5E0600D0B06C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D3834C31A2C5DBB00D0B06C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D3834F71A2C5E0600D0B06C;
+			remoteInfo = Widget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4D38350A1A2C5E0700D0B06C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4D3835061A2C5E0600D0B06C /* Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4D3834CB1A2C5DBB00D0B06C /* widgetTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = widgetTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +65,12 @@
 		4D3834E41A2C5DBB00D0B06C /* widgetTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = widgetTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D3834E91A2C5DBB00D0B06C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D3834EA1A2C5DBB00D0B06C /* widgetTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = widgetTestTests.m; sourceTree = "<group>"; };
+		4D3834F81A2C5E0600D0B06C /* Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D3834FA1A2C5E0600D0B06C /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		4D3834FE1A2C5E0600D0B06C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D3834FF1A2C5E0600D0B06C /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		4D3835001A2C5E0600D0B06C /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		4D3835021A2C5E0600D0B06C /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +88,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4D3834F51A2C5E0600D0B06C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D3834FB1A2C5E0600D0B06C /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +104,8 @@
 			children = (
 				4D3834CD1A2C5DBB00D0B06C /* widgetTest */,
 				4D3834E71A2C5DBB00D0B06C /* widgetTestTests */,
+				4D3834FC1A2C5E0600D0B06C /* Widget */,
+				4D3834F91A2C5E0600D0B06C /* Frameworks */,
 				4D3834CC1A2C5DBB00D0B06C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +115,7 @@
 			children = (
 				4D3834CB1A2C5DBB00D0B06C /* widgetTest.app */,
 				4D3834E41A2C5DBB00D0B06C /* widgetTestTests.xctest */,
+				4D3834F81A2C5E0600D0B06C /* Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +161,33 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4D3834F91A2C5E0600D0B06C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D3834FA1A2C5E0600D0B06C /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D3834FC1A2C5E0600D0B06C /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				4D3834FF1A2C5E0600D0B06C /* TodayViewController.h */,
+				4D3835001A2C5E0600D0B06C /* TodayViewController.m */,
+				4D3835021A2C5E0600D0B06C /* MainInterface.storyboard */,
+				4D3834FD1A2C5E0600D0B06C /* Supporting Files */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		4D3834FD1A2C5E0600D0B06C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D3834FE1A2C5E0600D0B06C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,10 +198,12 @@
 				4D3834C71A2C5DBB00D0B06C /* Sources */,
 				4D3834C81A2C5DBB00D0B06C /* Frameworks */,
 				4D3834C91A2C5DBB00D0B06C /* Resources */,
+				4D38350A1A2C5E0700D0B06C /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4D3835051A2C5E0600D0B06C /* PBXTargetDependency */,
 			);
 			name = widgetTest;
 			productName = widgetTest;
@@ -157,6 +228,23 @@
 			productReference = 4D3834E41A2C5DBB00D0B06C /* widgetTestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		4D3834F71A2C5E0600D0B06C /* Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D3835071A2C5E0700D0B06C /* Build configuration list for PBXNativeTarget "Widget" */;
+			buildPhases = (
+				4D3834F41A2C5E0600D0B06C /* Sources */,
+				4D3834F51A2C5E0600D0B06C /* Frameworks */,
+				4D3834F61A2C5E0600D0B06C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Widget;
+			productName = Widget;
+			productReference = 4D3834F81A2C5E0600D0B06C /* Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -172,6 +260,9 @@
 					4D3834E31A2C5DBB00D0B06C = {
 						CreatedOnToolsVersion = 6.1;
 						TestTargetID = 4D3834CA1A2C5DBB00D0B06C;
+					};
+					4D3834F71A2C5E0600D0B06C = {
+						CreatedOnToolsVersion = 6.1;
 					};
 				};
 			};
@@ -190,6 +281,7 @@
 			targets = (
 				4D3834CA1A2C5DBB00D0B06C /* widgetTest */,
 				4D3834E31A2C5DBB00D0B06C /* widgetTestTests */,
+				4D3834F71A2C5E0600D0B06C /* Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -209,6 +301,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D3834F61A2C5E0600D0B06C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D3835031A2C5E0600D0B06C /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +333,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4D3834F41A2C5E0600D0B06C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D3835011A2C5E0600D0B06C /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -240,6 +348,11 @@
 			isa = PBXTargetDependency;
 			target = 4D3834CA1A2C5DBB00D0B06C /* widgetTest */;
 			targetProxy = 4D3834E51A2C5DBB00D0B06C /* PBXContainerItemProxy */;
+		};
+		4D3835051A2C5E0600D0B06C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D3834F71A2C5E0600D0B06C /* Widget */;
+			targetProxy = 4D3835041A2C5E0600D0B06C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -393,6 +506,30 @@
 			};
 			name = Release;
 		};
+		4D3835081A2C5E0700D0B06C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4D3835091A2C5E0700D0B06C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -418,6 +555,14 @@
 			buildConfigurations = (
 				4D3834F21A2C5DBB00D0B06C /* Debug */,
 				4D3834F31A2C5DBB00D0B06C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4D3835071A2C5E0700D0B06C /* Build configuration list for PBXNativeTarget "Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D3835081A2C5E0700D0B06C /* Debug */,
+				4D3835091A2C5E0700D0B06C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
